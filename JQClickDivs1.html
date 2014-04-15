@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Detecting Click Events with jQuery</title>
+
+  <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
+  <style>
+   div {
+     position: relative; 
+     width: 200px; 
+     height : 100px; 
+     background-color: red;
+     color: white;
+     margin: 2px;
+   }
+  </style>
+</head>
+
+<body>
+  <div id="div1">The first div element </div>
+  <div id="div2">The second div element </div>
+
+  <script> 
+   var click1=0, click2=0, total=0;
+
+   $(document).ready(function() {
+      $("#div1").click(function() {
+        ++click1;
+        ++total;
+        $(this).text("Clicked: "+click1+" total: "+total);
+        $("#div2").text("Clicked: "+click2+" total: "+total);
+      });
+
+      $("#div2").click(function() {
+        ++click2;
+        ++total;
+        $(this).text("Clicked: "+click2+" total: "+total);
+        $("#div1").text("Clicked: "+click1+" total: "+total);
+      });
+   });
+  </script> 
+ </body>
+</html>
+

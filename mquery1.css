@@ -1,0 +1,75 @@
+@media screen and (min-width : 320px) and (max-width : 512px) {
+  #outer {
+    position: absolute;
+    left:0px;
+    top:100px;
+    background-color:green; 
+    width: 300px;
+    height: 300px;
+  }
+  
+  #inner1 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color:red; 
+  }
+  
+  #inner2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color:blue; 
+  }
+}
+  
+@media screen and (min-width : 513px) and (max-width : 678px) {
+  #outer {
+    left:100px;
+    top:100px;
+    position: absolute;
+    background-color:#f88; 
+    width: 400px;
+    height: 400px;
+  }
+  
+  #inner1 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color:blue; 
+  }
+  
+  #inner2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color:red; 
+  }
+}
+
+@media screen and (min-width : 679px) {
+  #outer {
+    left:200px;
+    top:200px;
+    position: absolute;
+    background-color:#088; 
+    width: 200px;
+    height: 200px;
+  }
+  
+  #inner1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:blue; 
+  }
+  
+  #inner2 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color:red; 
+  }
+}
+
